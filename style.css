@@ -369,7 +369,7 @@ color: #a3b4c4;
         margin-left: 40px;
         }
     .card:hover {
-        height: 50px; 
+        height: 500px; 
         transform: skew(0deg);
     }
     .book{
