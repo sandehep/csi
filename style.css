@@ -376,5 +376,35 @@ color: #a3b4c4;
         margin-top: 50px;
         margin-left: 85px;
     }
+     .card {
+        width: 300px;
+        height: 200px;
+        margin-top: 100px;
+        margin-left: 40px;
+        }
+    .card:hover {
+        height: 500px; 
+        transform: skew(0deg);
+    }
+    .book{
+        margin-left: 70px;
+    }
+    .f{
+        color: #a3b4c4;
+        margin-top: 50px;
+        margin-left: 85px;
+    }
+    .card1{
+        margin-left: 63px;
+    }
+    
+    .card:hover {
+        height: 500px; 
+        transform: skew(0deg);
+    }
+    .card1{
+        margin-left: 63px;
+    }
+    
     
 }
