@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSI Convention</title>
+    <link rel="icon" href="IMG/csi_logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="IMG/csi_logo.png" alt="Left Logo" class="logo">
+        <h1 class="c">Convension2K25</h1>
+        <ul class="nav-links" id="na">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+    </nav>
+    <div id="countdown">
+        <div class="time-box"><span id="days">00</span> Days</div>
+        <div class="time-box"><span id="hours">00</span> Hours</div>
+        <div class="time-box"><span id="minutes">00</span> Min</div>
+        <div class="time-box"><span id="seconds">00</span> Sec</div>
+    </div>
+    <div class="card">
+        <div class="align">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+    
+        <h1>Convension
+            2K25</h1>
+        <p>
+            Convention is a platform for students to showcase their skills, creativity, and technical expertise through six thrilling events. Whether you're a coder, a tech enthusiast, or someone who loves to explore new challenges, there's something for everyone!
+        </p>
+    </div>
+    <div class="book">
+        <p>1<br>
+            2<br>
+            3<br>
+            4<br>
+            5<br>
+            6<br>
+        </p><br>
+        <button class="but">
+           <a href="#"> <span> Detials </span></a>
+            
+          </button>
+        <div class="cover">
+            <p>List of Events</p>
+        </div>
+    </div>
+
+    <h1 class="f"> Coordinators </h1>
+    <div class="container">
+        <div class="card1">
+            <div class="card__content">
+                <div class="card-image">
+                    <img src="IMG/president.png" alt="Coordinator">
+                </div>
+                <p class="name">John Doe</p>
+                <p class="role">Staff Coordinator</p>
+            </div>
+        </div>
+        
+        <div class="card1">
+            <div class="card__content">
+                <div class="card-image">
+                    <img src="IMG/president.png" alt="Coordinator">
+                </div>
+                <p class="name">Jane Smith</p>
+                <p class="role">Student Coordinator</p>
+            </div>
+        </div>
+        
+        <div class="card1">
+            <div class="card__content">
+                <div class="card-image">
+                    <img src="IMG/president.png" alt="Coordinator">
+                </div>
+                <p class="name">Alex Brown</p>
+                <p class="role">Event Manager</p>
+            </div>
+        </div>
+        
+        <div class="card1">
+            <div class="card__content">
+                <div class="card-image">
+                    <img src="IMG/president.png" alt="Coordinator">
+                </div>
+                <p class="name">Emily White</p>
+                <p class="role">Tech Lead</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+
+        function startCountdown() {
+            const eventDate = new Date("2025-03-16T10:00:00").getTime(); // Change to your event date
+
+            setInterval(function () {
+                const now = new Date().getTime();
+                const timeLeft = eventDate - now;
+
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+                document.getElementById("seconds").innerText = seconds;
+
+                if (timeLeft < 0) {
+                    document.getElementById("countdown").innerHTML = "<h2>Event has Started!</h2>";
+                }
+            }, 1000);
+        }
+
+        startCountdown();
+    </script>
+</body>
+</html>
