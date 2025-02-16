@@ -70,7 +70,7 @@ margin-top: 100px;
 margin-left: 425px;
 }
 .card:hover {
-height: 254px;
+height: 300px;
 transform: skew(0deg);
 }
 .align {
@@ -363,27 +363,13 @@ color: #a3b4c4;
         padding: 10px;
     }
     .card {
-        width: 350px;
-        height: 120px;
-        margin-top: 100px;
-        margin-left: 15px;
-        }   
-    .book{
-        margin-left: 70px;
-    }
-    .f{
-        color: #a3b4c4;
-        margin-top: 50px;
-        margin-left: 85px;
-    }
-     .card {
         width: 300px;
         height: 200px;
         margin-top: 100px;
         margin-left: 40px;
         }
     .card:hover {
-        height: 500px; 
+        height: 50px; 
         transform: skew(0deg);
     }
     .book{
@@ -397,14 +383,4 @@ color: #a3b4c4;
     .card1{
         margin-left: 63px;
     }
-    
-    .card:hover {
-        height: 500px; 
-        transform: skew(0deg);
-    }
-    .card1{
-        margin-left: 63px;
-    }
-    
-    
 }
