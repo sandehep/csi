@@ -6,15 +6,27 @@
 }
 body {
     background-color: #1f2f33;
+    background-image: url('IMG/uranus-sky-night-background-asset-game-2d-futuristic-generative-ai.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: #a3b4c4;
-    color: #1f2f33;
+    background-color: #000;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+
+    color: #a3b4c4;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
     
 }
 .logo {
@@ -31,10 +43,14 @@ body {
 }
 .nav-links a {
     text-decoration: none;
-    color: #1f2f33;
+    color: #a3b4c4;
     font-size: 18px;
     
 }
+.nav-links a:hover{
+    text-shadow: 1px 1px 10px #a3b4c4;
+}
+
 .menu-btn {
     display: none;
     font-size: 24px;
@@ -51,7 +67,7 @@ body {
     margin-left: 280px;
 
 }
-/* From Uiverse.io by Fcodingx */ 
+
 .card {
 width: 700px;
 height: 120px;
@@ -116,12 +132,23 @@ color: #a3b4c4;
     font-weight: bold;
     margin-top: 100px;
 }
+
+@keyframes easein {
+    from{
+        opacity: 0%;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
 .time-box {
     padding: 10px 20px;
-    background: #a3b4c4;
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     box-shadow: 0px 0px 10px #a3b4c4;
-    color: #1f2f33;
+    color: #a3b4c4;
+    animation: easein 2s ease 0ms;
 }
 /* From Uiverse.io by eslam-hany */ 
 .book {
@@ -129,9 +156,9 @@ color: #a3b4c4;
     border-radius: 10px;
     width: 220px;
     height: 300px;
-    background-color: #a3b4c4;
-    -webkit-box-shadow: 1px 1px 12px #000;
-    box-shadow: 1px 1px 12px #000;
+    backdrop-filter: blur(5px);
+    -webkit-box-shadow: 1px 1px 12px #a3b4c4;
+    box-shadow: 1px 1px 12px #a3b4c4;
     -webkit-transform: preserve-3d;
     -ms-transform: preserve-3d;
     transform: preserve-3d;
@@ -146,7 +173,7 @@ color: #a3b4c4;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: #000;
+    color: #a3b4c4;
     margin-left: 650px;
     margin-top: 100px;
   }
@@ -154,7 +181,7 @@ color: #a3b4c4;
   .cover {
     top: 0;
     position: absolute;
-    background-color: #a3b4c4;
+    backdrop-filter: blur(5px);
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -189,7 +216,7 @@ color: #a3b4c4;
     font-size: 20px;
     font-weight: bolder;
   }
-  /* From Uiverse.io by Web-Potato */ 
+
 .but {
     padding: 0.1em 0.25em;
     width: 13em;
@@ -201,7 +228,9 @@ color: #a3b4c4;
     cursor: pointer;
     margin-top: 230px;
   }
-  
+  .but a {
+    text-decoration: none;
+  }
   .but span {
     position: relative;
     display: flex;
@@ -232,12 +261,20 @@ color: #a3b4c4;
     display: flex;
     gap: 30px; /* Space between cards */
     flex-wrap: wrap; /* Makes it responsive */
+    
+}
+
+#card1{
+    margin-left: 500px;
+}
+#card3{
+    margin-left: 130px;
 }
 
 .card1 {
     width: 250px;
     height: 354px;
-    background: #1f2f33;
+    backdrop-filter: blur(5px);
     position: relative;
     transform: skewY(-10deg);
     border: 5px solid #a3b4c4;
@@ -320,13 +357,34 @@ color: #a3b4c4;
     font-size: 16px;
     color: white;
 }
+
+
+
 .f{
     color: #a3b4c4;
     margin-left: 650px;
     margin-top: 70px;
 }
 
+footer {
+    
+    color: #a3b4c4;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14apx;
+    background-color: #000;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+  }
+  footer p {
+    font-size: inherit !important;
+}
+
+
 @media (max-width: 768px) {
+
+
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -334,8 +392,9 @@ color: #a3b4c4;
         top: 60px;
         left: 0;
         width: 100%;
-        background: #a3b4c4;
+        background: #000;
         text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
     }
     .nav-links.active {
         display: flex;
@@ -345,7 +404,7 @@ color: #a3b4c4;
     }
     .menu-btn {
         display: block;
-        color: #1f2f33;
+        color: #a3b4c4;
     }
     .c{
         margin-left: 5px;
@@ -362,6 +421,13 @@ color: #a3b4c4;
         font-size: 1.2rem;
         padding: 10px;
     }
+    #card1{
+        margin-left: 60px;
+    }
+    #card3{
+        margin-left: 60px;
+    }
+
     .card {
         width: 300px;
         height: 200px;
@@ -383,4 +449,66 @@ color: #a3b4c4;
     .card1{
         margin-left: 63px;
     }
+    body {
+        background-image: url('IMG/uranus-sky-night-background-asset-game-2d-futuristic-generative-ai.jpg');
+        background-size: 100% 100%;
+      }
+      
+    
+    
+    
 }
+
+/*animation*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar h1 {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card h1, .card p {
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+}
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+}
+
+.scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#typewriter {
+        display: inline-block;
+        white-space: pre-wrap;
+        overflow: hidden;
+        border-right: 2px solid black;
+        animation: blink 0.75s step-end infinite;
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
