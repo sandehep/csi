@@ -134,14 +134,14 @@ body {
 .card__title {
     margin: 0;
     font-size: 20px;
-    color: #333;
+    color: #a3b4c4;
     font-weight: 700;
 }
 
 .card__description {
     margin: 10px 0;
     font-size: 14px;
-    color: black;
+    color: #a3b4c4;
     line-height: 1.4;
     text-align: center;
 }
