@@ -150,7 +150,6 @@ color: #a3b4c4;
     color: #a3b4c4;
     animation: easein 2s ease 0ms;
 }
-/* From Uiverse.io by eslam-hany */ 
 .book {
     position: relative;
     border-radius: 10px;
@@ -268,7 +267,7 @@ color: #a3b4c4;
     margin-left: 500px;
 }
 #card3{
-    margin-left: 130px;
+    margin-left: 150px;
 }
 
 .card1 {
