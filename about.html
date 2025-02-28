@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSI Convention</title>
+    <link rel="icon" href="IMG/csi_logo.png">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="IMG/csi_logo.png" alt="Left Logo" class="logo">
+        <h1 class="c">Convention2K25</h1>
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="na">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+   <center>
+    <div class="container">
+        <div class="card" id="card1">
+            <span>Our Mission</span>
+            <p class="description">To inspire and connect tech enthusiasts by providing a platform for learning, innovation, and collaboration.</p>
+        </div>
+        <div class="card">
+            <span>Our Vision</span>
+            <p class="description">To become a premier tech convention, shaping the future of technology and fostering a community of innovators.</p>
+        </div>
+        <div class="card">
+            <span>Our Team</span>
+            <p class="description">A group of passionate organizers, industry experts, and volunteers working together to make this event successful.</p>
+        </div>
+    </div>
+   </center>
+   <footer>
+    <p>&copy; 2025 CSI Convention. All Rights Reserved.</p>
+</footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("na").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

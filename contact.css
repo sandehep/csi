@@ -1,0 +1,282 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:cursive;
+}
+body {
+    background-color: #1f2f33;
+    background-image: url('IMG/uranus-sky-night-background-asset-game-2d-futuristic-generative-ai.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+   
+    color: #a3b4c4;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    background-color: #000;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+}
+.logo {
+    height: 50px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #a3b4c4;
+    font-size: 18px;
+    
+}
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.c{
+    margin-left: 550px;
+    font-size: 30px;
+}
+#na{
+    margin-left: 280px;
+}
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .card {
+            width: 400px; /* Increased card width */
+            height: 450px; /* Increased card height */
+            background: rgba(211, 211, 211, 0.199);
+            position: absolute;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            color: #1f2f33;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #c1 {
+            backdrop-filter: blur(5px);
+            transform: translateX(-200px) rotate(-20deg);
+            
+        }
+
+        #c2 {
+            backdrop-filter: blur(5px);
+            transform: translateX(-100px) rotate(-10deg);
+        }
+
+        #c3 {
+            backdrop-filter: blur(5px);
+            transform: translateX(0) rotate(0deg);
+        }
+
+        #c4 {
+            backdrop-filter: blur(5px);
+            transform: translateX(100px) rotate(10deg);
+        }
+
+        .main:hover #c1 {
+            transform: translateX(-400px) rotate(0deg);
+        }
+
+        .main:hover #c2 {
+            transform: translateX(-200px) rotate(0deg);
+        }
+
+        .main:hover #c3 {
+            transform: translateX(0) rotate(0deg);
+        }
+
+        .main:hover #c4 {
+            transform: translateX(200px) rotate(0deg);
+        }
+
+        .card:hover {
+            transform: scale(1.1) rotate(0deg) !important;
+            z-index: 10;
+        }
+
+        .input-field {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .textarea-field {
+            height: 100px;
+        }
+
+        .submit-btn {
+            background-color: #1f2f33;
+            color: #a3b4c4;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #1f2f33;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #1e90ff;
+        }
+
+        .live-chat-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .live-chat-btn:hover {
+            background-color: #128c7e;
+        }
+        .ig{
+            width: 80px;
+            height: 80px;
+        }
+
+        footer {
+          color: #a3b4c4;
+          padding: 20px;
+          text-align: center;
+          margin-top: -63px;
+          background-color: #000;
+          box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+        }
+      
+        @media (max-width: 768px) {
+          .nav-links {
+              display: none;
+              flex-direction: column;
+              position: absolute;
+              top: 60px;
+              left: 0;
+              width: 100%;
+              background: #000;
+              text-align: center;
+          }
+          .nav-links.active {
+              display: flex;
+          }
+          .nav-links li {
+              padding: 10px 0;
+          }
+          .menu-btn {
+              display: block;
+              color: #a3b4c4;
+          }
+          .c{
+              margin-left: 5px;
+          }
+          #na{
+              margin-left: 0px;
+          }
+          
+          
+        
+          .live-chat-btn {
+            bottom: 15px;
+            right: 15px;
+            padding: 10px;
+            font-size: 20px;
+          }
+        }
+        @media (max-width: 768px) {
+          .main {
+              flex-direction: column;
+              align-items: center;
+              padding-top: 100px;
+              height: auto; /* Allow content to expand naturally */
+          }
+      
+          .card {
+              width: 90%; /* Make the card take most of the screen width */
+              max-width: 400px; /* Limit the max width for consistency */
+              height: auto; /* Adjust height dynamically */
+              margin: 15px 0; /* Add space between the cards */
+              position: static; /* Remove absolute positioning */
+              transform: none !important; /* Remove transforms */
+          }
+      
+          /* Ensure last card doesn't overlap chat button */
+          #c4 {
+              margin-bottom: 80px; /* Add extra bottom margin */
+          }
+      
+          .live-chat-btn {
+              bottom: 20px;
+              right: 20px;
+              z-index: 100; /* Ensure it stays on top */
+          }
+      }
+      

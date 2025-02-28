@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSI Convention</title>
+        <link rel="icon" href="IMG/csi_logo.png">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+<body>
+        <nav class="navbar">
+            <img src="IMG/csi_logo.png" alt="Left Logo" class="logo">
+            <h1 class="c">Convention2K25</h1>
+            <ul class="nav-links" id="na">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+<div class="main">
+    <div class="card" id="c1">
+        <h2>Contact Form</h2>
+        <form action="#" method="POST">
+            <input type="text" class="input-field" name="name" placeholder="Your Name" required>
+            <input type="email" class="input-field" name="email" placeholder="Your Email" required>
+            <input type="text" class="input-field" name="subject" placeholder="Subject" required>
+            <textarea class="input-field textarea-field" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+    <div class="card" id="c2">
+        <h2>Venue Address</h2>
+        <p>1234 Main St, City Name, Country</p>
+    </div>
+    <div class="card" id="c3">
+        <h2>Email & Phone</h2>
+        <p><a href="mailto:contact@event.com">contact@event.com</a></p>
+        <p>Student Coordinator: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        <p>Staff Coordinator: <a href="tel:+1987654321">+1 987 654 321</a></p>
+    </div>
+    <div class="card" id="c4">
+        <h2>Social Media</h2>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank"><img class="ig" src="IMG/csi_logo.png"></a>
+            <a href="https://linkedin.com" target="_blank"><img class="ig" src="IMG/csi_logo.png"></a>
+        </div>
+    </div>
+</div>
+
+<a href="https://wa.me/1234567890" class="live-chat-btn" target="_blank">💬</a>
+<footer>
+    <p>&copy; 2025 CSI Convention. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>
