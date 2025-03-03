@@ -463,7 +463,7 @@ footer {
         margin-left: 40px;
         }
     .card:hover {
-        height: 680px; 
+        height: 700px; 
         transform: skew(0deg);
     }
     .book{
