@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:cursive;
+    font-family: 'Times New Roman';
+    color: white;
 }
 body {
     background-color: #1f2f33;
-    background-image: url('uranus-sky-night-background-asset-game-2d-futuristic-generative-ai.jpg');
+    background-image: url('IMG/uranus-sky-night-background-asset-game-2d-futuristic-generative-ai.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -21,7 +22,6 @@ body {
     padding: 15px 20px;
     background-color: #000;
     box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
-
     color: #a3b4c4;
     position: fixed;
     width: 100%;
@@ -60,12 +60,13 @@ body {
     cursor: pointer;
 }
 .c{
-    margin-left: 550px;
+    margin-left: 600px;
     font-size: 30px;
+    color: #a3b4c4;
 }
 #na{
     margin-left: 280px;
-
+    font-size: 25px;
 }
 
 .card {
@@ -86,7 +87,7 @@ margin-top: 100px;
 margin-left: 425px;
 }
 .card:hover {
-height: 300px;
+height: 400px;
 transform: skew(0deg);
 }
 .align {
@@ -124,6 +125,9 @@ color: #a3b4c4;
  text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
  font-family: papyrus;
 }
+.card p span{
+    font-size: 30px;
+}
 #countdown {
     display: flex;
     justify-content: center;
@@ -131,6 +135,7 @@ color: #a3b4c4;
     font-size: 2rem;
     font-weight: bold;
     margin-top: 100px;
+    color: white;
 }
 
 @keyframes easein {
@@ -147,9 +152,32 @@ color: #a3b4c4;
     backdrop-filter: blur(5px);
     border-radius: 10px;
     box-shadow: 0px 0px 10px #a3b4c4;
-    color: #a3b4c4;
+    color: white;
     animation: easein 2s ease 0ms;
 }
+.butn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    border-radius: 5px;
+    margin-top: 70px;
+    transition: 0.3s;
+    margin-left: 610px;
+    width: 300px;
+    height: 50px;
+    backdrop-filter: blur(10px); /* Adds blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.butn:hover{
+    background: #a3b4c4;
+}
+
 .book {
     position: relative;
     border-radius: 10px;
@@ -410,6 +438,7 @@ footer {
     }
     #na{
         margin-left: 0px;
+        font-size: 20px;
     }
     #countdown {
         flex-direction: row; /* Stack elements on smaller screens */
@@ -434,7 +463,7 @@ footer {
         margin-left: 40px;
         }
     .card:hover {
-        height: 500px; 
+        height: 680px; 
         transform: skew(0deg);
     }
     .book{
@@ -449,10 +478,12 @@ footer {
         margin-left: 63px;
     }
     body {
-        background-image: url('uranus-sky-night-background-asset-game-2d-futuristic-generative-ai.jpg');
+        background-image: url('IMG/uranus-sky-night-background-asset-game-2d-futuristic-generative-ai.jpg');
         background-size: 100% 100%;
       }
-      
+    .butn{
+        margin-left: 30px;
+    }
     
     
     
