@@ -292,7 +292,9 @@ footer {
     .card__description {
         font-size: 11px; /* Even smaller font size for very small screens */
     }
-
+    #cd{
+        font-size: 5px;
+    }
     .register-btn {
         padding: 5px 8px; /* Smaller button for very small screens */
         font-size: 11px;
