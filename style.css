@@ -182,7 +182,7 @@ color: #a3b4c4;
     position: relative;
     border-radius: 10px;
     width: 220px;
-    height: 300px;
+    height: 330px;
     backdrop-filter: blur(5px);
     -webkit-box-shadow: 1px 1px 12px #a3b4c4;
     box-shadow: 1px 1px 12px #a3b4c4;
@@ -230,15 +230,45 @@ color: #a3b4c4;
     -ms-flex-pack: center;
     justify-content: center;
   }
+  #book-text {
+    margin-left: 0px;
+    display: none;
+    font-size: 14px;
+    margin-top: -40px;
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure it takes full width for centering */
+}
+
+.book:hover #book-text {
+    display: flex;
+    margin-left: 50px; 
+    justify-content: center; 
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.book:hover .but {
+    margin-left: -130px; 
+    margin-right: 20px;
+}
   
-  .book:hover .cover {
+  .book:hover  .cover {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     -webkit-transform: rotatey(-80deg);
     -ms-transform: rotatey(-80deg);
     transform: rotatey(-80deg);
   }
-  
+
   p {
     font-size: 20px;
     font-weight: bolder;
@@ -253,7 +283,8 @@ color: #a3b4c4;
     border-radius: 0.3em;
     font-size: 12px;
     cursor: pointer;
-    margin-top: 230px;
+    margin-top: 250px;
+    
   }
   .but a {
     text-decoration: none;
@@ -388,7 +419,7 @@ color: #a3b4c4;
 
 
 .f{
-    color: #a3b4c4;
+    color: white;
     margin-left: 650px;
     margin-top: 70px;
 }
@@ -463,7 +494,7 @@ footer {
         margin-left: 40px;
         }
     .card:hover {
-        height: 700px; 
+        height: 680px; 
         transform: skew(0deg);
     }
     .book{
