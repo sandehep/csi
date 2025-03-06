@@ -71,13 +71,13 @@ body {
     grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
     gap: 20px; /* Space between cards */
     justify-content: center;
-    margin-left: 250px;
+    margin-left: 45px;
 }
 
 .card {
     position: relative;
-    width: 220px;
-    height: 300px;
+    width: 450px;
+    height: 250px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -213,4 +213,88 @@ footer {
         margin-left: 80px;
     }
 
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+        gap: 20px; /* Space between cards */
+        margin-left: 20px; /* Adjust margin for smaller screens */
+        margin-right: 20px; /* Ensure it doesn't overflow */
+    }
+
+    .card {
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Auto height to fit content */
+        max-width: 300px; /* Limit maximum width */
+        margin: 0 auto; /* Center the card */
+    }
+
+    .card__content {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .card__title {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+
+    .card__description {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .register-btn {
+        padding: 6px 10px; /* Smaller button for mobile */
+        font-size: 12px;
+    }
+
+    .navbar {
+        padding: 10px 15px; /* Reduce padding for smaller screens */
+    }
+
+    .logo {
+        height: 40px; /* Smaller logo for mobile */
+    }
+
+    .nav-links {
+        top: 50px; /* Adjust top position for mobile menu */
+    }
+
+    .nav-links li {
+        padding: 8px 0; /* Reduce padding for mobile menu items */
+    }
+
+    .c {
+        margin-left: 5px; /* Adjust margin for smaller screens */
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    #na {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-left: 10px; /* Further adjust margin for very small screens */
+        margin-right: 10px;
+    }
+
+    .card {
+        max-width: 100%; /* Allow cards to take full width on very small screens */
+    }
+
+    .card__title {
+        font-size: 16px; /* Even smaller font size for very small screens */
+    }
+
+    .card__description {
+        font-size: 11px; /* Even smaller font size for very small screens */
+    }
+
+    .register-btn {
+        padding: 5px 8px; /* Smaller button for very small screens */
+        font-size: 11px;
+    }
 }
